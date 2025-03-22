@@ -1,0 +1,23 @@
+# include <stdio.h>
+void main ()
+{
+    int i,n,count[21]={0};
+    
+    while(1)
+    {
+        scanf("%d",&n);
+        if(n==0)
+        {
+            break;
+        }
+        count[n]++;
+    }
+    
+    for (i=0; i<21; i++)
+    {
+        if(count[i]!=0)
+        {
+            printf("No. of %ds= %d\n",i,count[i]);
+        }
+    }
+}
